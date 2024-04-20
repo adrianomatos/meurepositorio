@@ -1,0 +1,241 @@
+body {
+  background-color: darkgray;
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn-azul-branco {
+  width: 4rem;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-branco-azul {
+  width: 4rem;
+  background-color: white;
+  color: blue;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-azul-branco-grande {
+  width: 8rem;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+a:hover {
+  color: brown;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+h3 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+/* MENU */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 10%;
+  font-weight: bold;
+}
+
+.menu__links {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+@media (max-width: 834px) {
+  .menu__links a:nth-child(1),
+  .menu__links a:nth-child(2),
+  .menu__links a:nth-child(3),
+  .menu__links a:nth-child(4),
+  .menu__links a:nth-child(5) {
+    display: none;
+  }
+}
+
+/* TOP */
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin: 0 10%;
+  margin-bottom: 20px;
+}
+
+.top__textos {
+  display: flex;
+  flex-direction: column;
+  width: 751px;
+}
+
+.top__textos__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.top__imagem {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top__imagem img {
+  width: 60%;
+  border-radius: 50%;
+}
+
+@media (max-width: 834px) {
+  .top {
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+  .top__imagem {
+    justify-content: flex-start;
+  }
+  h1 {
+    margin: 0 10%;
+    margin-bottom: 20px;
+  }
+}
+
+/* SOBRE MIM */
+#sobremim {
+  display: flex;
+  flex-direction: column;
+  background-color: aquamarine;
+}
+
+#sobremim p {
+  margin: 0 10%;
+  margin-bottom: 20px;
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 10%;
+  gap: 10px;
+}
+
+/* HOBBIES */
+.hobbies {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 10%;
+  gap: 10px;
+}
+
+/* FORMAÇÃO */
+.formacao {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 10%;
+  gap: 10px;
+}
+
+/* .formacao div{
+} */
+
+/* .formacao div img{
+}  */
+
+/* EXPERIÊNCIA */
+.experiencia {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 30px;
+  margin: 0 10%;
+}
+
+.experiencia img {
+  flex-grow: 3;
+}
+.experiencia__texto {
+  flex-grow: 1;
+  padding: 0;
+}
+
+.experiencia__texto__botoes {
+  display: flex;
+  gap: 10px;
+}
+
+/* FORMULÁRIO */
+#formulario {
+  background-color: aquamarine;
+}
+
+.formulario__conteudo {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  margin: 0 10%;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-item {
+  margin: 0;
+  margin-bottom: 3px;
+}
+
+.formulario__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  font-weight: bold;
+}
